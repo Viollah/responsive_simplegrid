@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_simplegrid</title>
+</head>
+<body>
+
+    <style>
+        body{
+        background-color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+}
+        .sub-section1{
+    display: flex;
+    border-radius: 1em;
+    margin: 1em;
+    width: 80%;
+    height: auto;
+    justify-content: space-around;
+    padding: 80px;
+    background-color: rgb(102, 72, 77);
+}
+.information h2{
+    font-size: 30px;
+    text-align: center;
+
+}
+.information p{
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+
+.headshot {
+    width: 150px;
+    border-radius: 200px;
+}
+.headshot-cointainer{
+    display: flex;
+    align-items: center;
+}
+
+.sub-section{
+    display: flex;
+    border-radius: 1em;
+    margin: 1em;
+    width: 80%;
+    height: auto;
+    justify-content: space-around;
+    padding: 80px;
+    background-color: rgb(0, 139, 93);
+    
+ }
+
+ .city-container h2{
+     font-size: 30px;
+     text-align: center;
+ }
+ .city-card p{
+    font-size: 20px;
+    text-align: center;
+}
+.city-container.city-image{
+    text-align: center;
+    border-radius: 1em;
+}
+
+ .city-image{
+     width: 200px;
+     border-radius: 200px;
+     }
+ 
+ .city-card{
+     display: flex;
+     align-items: center;
+ }
+ .foreign_languages{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    width: 80%;
+    height: auto;
+    background-color: rgb(203, 255, 80);
+    border-radius: 1em;
+    margin: 1em;
+    }
+    .tables h2{
+        text-align: center;
+        }
+ 
+    .tables{
+        border-radius: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    div.content{
+        display: table-cell;
+        background-color: #ffbb00;
+        height: 350px;
+        width: 230px;
+        /*border: 5px solid #000000;*/
+        float: left;
+        margin: 20px;
+        padding: 1em;
+        align-items: center;
+        
+    }
+    div#first{
+        background-color: antiquewhite;
+    }
+    div#first p{
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+    }
+    div#second{
+        background-color: lavender;
+    
+    }
+    div#second p{
+       font-size: 15px;
+    }
+    div#third{
+        background-color: lightgray;
+    }
+    div#third p{
+        font-size:15px;
+    }
+    h3,p {
+        text-align:center;
+        margin: .2em;
+        padding: .2em;
+        
+    }
+    .content {
+        text-align:center;
+      }
+    .content, img{
+        width: 80%;
+        height: auto;
+        border-radius: 1em;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .history{
+        display: flex;
+        border-radius: 1em;
+        width: 80%;
+        height: auto;
+        justify-content: space-around;
+        padding: 80px;
+        background-color: cornflowerblue;
+        margin: 1em;
+       }
+       .history h2{
+           text-align: center;
+       }
+  
+    footer {
+        margin: 0;
+        color: black;
+        text-align: center;
+        padding:0;
+        
+    }
+    </style>
+    <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <section class="sub-section1" id="about-me">
+                <div class="information">
+                    <h2>About Me</h2>
+                    <p>Hello, My name is Viollah Mudau.
+                      I am a web developer and I enjoy learning new skills.
+                      Hello, My name is Viollah Mudau.
+                      I am a web developer and I enjoy learning new skills.
+                      Hello, My name is Viollah Mudau.
+                      I am a web developer and I enjoy learning new skills.
+                    </p>
+              
+                </div>
+                 
+                <div class="headshot-container">
+                        <img class="headshot" src="images/vio.jpg"alt="Viollah Mudau's headshot">
+                         
+              </div>
+              </section >
+          </div>
+          <div class="col-3">
+            <section class="sub-section" id="city">
+                <div class="city-container">
+                     <h2>Paris</h2>
+                     <img class="city-image"src="images/city2.jpg" alt="city image"/>
+                     
+                  </div>
+          
+                  <div class="city-card">
+                     <p>
+                         Lorem ipsum, dolor sit amet 
+                         consectetur adipisicing elit.
+                          Explicabo harum itaque fuga exercitationem
+                           corporis aperiam 
+                         illum tempore natus unde iste.Lorem ipsum, dolor sit amet 
+                         consectetur adipisicing elit.
+                          Explicabo harum itaque fuga exercitationem
+                           corporis aperiam 
+                         illum tempore natus unde iste.</p>
+                     
+          
+                  </div>
+             </section>
+          </div>
+          <div class="col-6">
+            <section class="foreign_languages" id="languages">
+       
+                <div class="tables">
+                    <h2>Foreign Languages</h2>
+                    <table width ="350px" border= "1px">
+                        <tr>
+                            <td>French</td>
+                            <td> japanese</td>
+                        </tr>
+                           <tr>
+                           <td> Akan</td>
+                            <td> Hindi</td>
+                           </tr>     
+                            <tr>
+                                <td>spanish</td>
+                                <td> chinese</td>
+                            </tr>
+                            <tr>
+                                <td>Bengali</td>
+                                <td> English</td>
+                            </tr>
+                            <tr>
+                                <td>Bamana</td>
+                                <td> Russian</td>
+                            </tr>
+                   </table>
+                </div> 
+                </section>
+          </div>
+          <div class="col-6">
+            <section class="history" id="history">
+                <div>
+                    <h2>Historic Places</h2>
+                    <div class="content" id="first">
+                        <h3>Kruger Park</h3>
+                        <p>scenic landscape, 
+                            with sandstone formations, 
+                            woodlands,
+                             riverine forest and baobab trees
+                             scenic landscape, 
+                             with sandstone formations,
+                             riverine forest and baobab trees
+                              scenic landscape, 
+                              with sandstone formations, 
+                             </p>
+                             <img src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="content" id="second">
+                        
+                        <img src="images/pic2.jpg" alt="">
+                        <h3>Mabungubwe</h3>
+                        <p>scenic landscape, 
+                            with sandstone formations, 
+                            woodlands,
+                             riverine forest and baobab trees
+                             scenic landscape, 
+                             with sandstone formations,
+                             riverine forest and baobab trees
+                              scenic landscape, 
+                               with sandstone formations, 
+                             </p>
+                    </div>
+                         <div class="content" id="third">
+                             <h3>Makonjwa Montaion</h3>
+                             <p>scenic landscape, 
+                                with sandstone formations, 
+                                woodlands,
+                                 riverine forest and baobab trees
+                                 scenic landscape, 
+                                 with sandstone formations,
+                                 riverine forest and baobab trees
+                                 scenic landscape, 
+                                 with sandstone formations,
+                                </p>
+                                <img src="images/pic3.jpg" alt="">
+                         </div>
+                </div>
+            </section>
+          </div>
+          <div class="col-6">
+            <footer class="Contact-us">
+                <h2>Contact me</h2>
+                <p>viollah0119@gmail.com</p>
+        
+            </footer>
+          </div>
+          
+        </div>
+      </div>
+</body>
+</html>
